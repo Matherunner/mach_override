@@ -28,11 +28,7 @@
 #include "extern.h"
 #include "decode.h"
 
-#if !defined(__UD_STANDALONE__)
-# if HAVE_STRING_H
-#  include <string.h>
-# endif
-#endif /* !__UD_STANDALONE__ */
+#include <string.h>
 
 /* =============================================================================
  * ud_init() - Initializes ud_t object.

@@ -361,7 +361,7 @@ decode_reg(struct ud *u,
            int num,
            int size)
 {
-  int reg;
+  int reg = 0;
   size = resolve_operand_size(u, size);
   switch (type) {
     case REGCLASS_GPR : reg = decode_gpr(u, size, num); break;

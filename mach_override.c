@@ -382,7 +382,7 @@ mach_override_ptr(
 allocateBranchIsland(
 		BranchIsland	**island,
 		int				allocateHigh,
-		void *originalFunctionAddress)
+		void *originalFunctionAddress __attribute__((unused)))
 {
 	assert( island );
 	
